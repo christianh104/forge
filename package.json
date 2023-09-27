@@ -26,7 +26,6 @@
   "main": "lib/index.js",
   "files": [
     "lib/*.js",
-    "flash/swf/*.swf",
     "dist/*.min.js",
     "dist/*.min.js.map"
   ],
@@ -75,7 +74,7 @@
     "coverage": "rm -rf coverage && nyc --reporter=lcov --reporter=text-summary npm test",
     "coverage-ci": "rm -rf coverage && nyc --reporter=lcovonly npm test",
     "coverage-report": "nyc report",
-    "lint": "eslint *.js lib/*.js tests/*.js tests/**/*.js examples/*.js flash/*.js"
+    "lint": "eslint *.js lib/*.js tests/*.js tests/**/*.js examples/*.js"
   },
   "nyc": {
     "exclude": [
